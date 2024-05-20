@@ -1,0 +1,144 @@
+@import "../../assets/scss/maps.scss";
+@import "../../assets/scss/mixins.scss";
+@import "../../assets/scss/veriable.scss";
+
+.productCard {
+  @include cnt(28.2rem, 38.8rem);
+
+  background: #fff;
+  .productCard-top {
+    position: relative;
+    @include flex(column, $align: center, $justify: center);
+    @include cnt(28.2rem, 28rem, 0.8rem);
+    background: rgb(246, 246, 246);
+    .productHeartIcon {
+      @include position(absolute, $top: 12px, $right: 12px);
+      @include flex($justify: center, $align: center);
+      @include cnt(3.6rem, 3.6rem, 100%);
+      background: #fff;
+      .heartIconProductt {
+        @include cnt(2rem, 2rem);
+      }
+    }
+    .productCardImg1 {
+      @include cnt(18rem, 18rem);
+    }
+  }
+  .productCard-bottom {
+    @include flex(column);
+    .productCard-Bottom-titleAndPrice {
+      @include margin($top: 16px, $bottom: 8px);
+      @include flex($justify: space-between);
+      .productCard-productName {
+        @include font($size: 20px, $weight: 600);
+      }
+      .productCard-productPrice {
+        @include font($size: 20px, $weight: 600);
+        color: rgb(29, 158, 52);
+      }
+    }
+    .productCard-bottom-dsc {
+      @include font($size: 16px, $weight: 400);
+      margin-bottom: 8px;
+      color: rgb(129, 139, 156);
+    }
+    .productCard-bottom-raiting {
+      @include flex($align: center, $gap: 8px);
+      .productStarIcon {
+        @include cnt(2rem, 2rem);
+      }
+      .productCard-bottom-raiting {
+        @include font($size: 16px, $weight: 400);
+      }
+      .productCard-bottom-circle {
+        @include cnt(4px, 4px, 100%);
+        background: rgb(228, 233, 238);
+      }
+      .productCard-bottom-raiting-p {
+        @include font($size: 16px, $weight: 400);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .productCard {
+    @include cnt(19.8rem, 28.2rem);
+    .productCard-top {
+      @include cnt(19.8rem, 19rem, 0.8rem);
+      .productHeartIcon {
+        .heartIconProductt {
+          @include cnt(1.6rem, 1.5rem);
+        }
+      }
+      .productCardImg1 {
+        @include cnt(12rem, 12rem);
+      }
+    }
+    .productCard-bottom {
+      .productCard-Bottom-titleAndPrice {
+        @include margin($top: 12px, $bottom: 4px);
+        .productCard-productName {
+          @include font($size: 16px);
+        }
+        .productCard-productPrice {
+          @include font($size: 16px);
+        }
+      }
+      .productCard-bottom-dsc {
+        @include font($size: 14px);
+      }
+      .productCard-bottom-raiting {
+        .productCard-bottom-raiting {
+          @include font($size: 14px);
+        }
+        .productCard-bottom-raiting-p {
+          @include font($size: 14px, $weight: 400);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .productCard {
+    @include cnt(15.5rem, 24.4rem);
+    .productCard-top {
+      @include cnt(15.5rem, 13rem);
+      .productHeartIcon {
+        @include cnt(3.2rem, 3.2rem);
+        .heartIconProductt {
+          @include cnt(1.7rem, 1.5rem);
+        }
+      }
+      .productCardImg1 {
+        @include cnt(9rem, 9rem);
+      }
+    }
+    .productCard-bottom {
+      .productCard-Bottom-titleAndPrice {
+        @include margin($top: 23px, $bottom: 4px);
+        .productCard-productName {
+          @include font($size: 14px);
+        }
+        .productCard-productPrice {
+          @include font($size: 14px);
+        }
+      }
+      .productCard-bottom-dsc {
+        @include font($size: 12px);
+      }
+      .productCard-bottom-raiting {
+        .productStarIcon {
+          @include cnt(1.7rem, 1.7rem);
+        }
+        .productCard-bottom-raiting {
+          @include font($size: 12px);
+        }
+        .productCard-bottom-raiting-p {
+          @include font($size: 12px);
+        }
+      }
+    }
+  }
+}

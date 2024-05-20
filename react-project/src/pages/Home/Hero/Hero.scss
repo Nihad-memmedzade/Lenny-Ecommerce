@@ -1,0 +1,239 @@
+@import "../../../assets/scss/maps.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/veriable.scss";
+
+.heroContainer {
+  position: relative;
+  z-index: -1;
+  background-color: $hero-footer-background;
+  @include flex($justify: space-between);
+  .heroContainer-left {
+    @include position(relative, $left: 115px);
+    margin-top: 95px;
+    z-index: 1;
+    .heroContainer-left-title {
+      @include font(58px,"ClashGrotesk", $weight: 600);
+      margin-bottom: 16px;
+      width: 657px;
+    }
+    .heroContainer-left-p {
+      width: 585px;
+      @include font(18px, $weight: 400);
+      color: rgb(129, 139, 156);
+      margin-bottom: 35px;
+    }
+    .hero-btn1 {
+      color: #fff;
+      @include font($size: 18px, $weight: 600);
+    }
+    .hero-btn2 {
+      border: 1px solid rgb(30, 76, 47);
+      background-color: $hero-footer-background;
+      @include font($size: 18px, $weight: 600);
+      color: rgb(30, 76, 47);
+      margin-left: 16px;
+    }
+  }
+  .heroRightImg {
+    @include cnt($height: 592px);
+  }
+  .heroContainer-right {
+    position: relative;
+    .heroRightCard {
+      @include position(absolute, 125px, 278px);
+      .heroRightCircle {
+        margin-bottom: 4px;
+        @include flex($direction: column, $gap: 4px, $align: center);
+        .heroCircle {
+          position: relative;
+          opacity: 0.3;
+          @include flex($justify: center, $align: center);
+          @include cnt(42px, 42px, 100%);
+          background: rgb(255, 255, 255);
+        }
+        .heroCircle2 {
+          @include position(absolute, 13px);
+          @include cnt(16px, 16px, $border-r: 100%);
+          background: #fff;
+        }
+        .heroLines {
+          @include flex($direction: column, $gap: 2px);
+          .heroLine {
+            @include cnt(2px, 4px, 20px);
+            background: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+    .heroCardMain {
+      @include cnt(150px, 223px, $border-r: 8px);
+      background-color: #fff;
+      .heroCardMain2 {
+        position: relative;
+        @include cnt(150px, 144px, $border-r: 8px);
+        background: rgb(246, 246, 246);
+        @include flex($justify: center, $align: center);
+        .heroCardMain2img {
+          @include cnt(120px, 120px);
+          .heroCardMainHeartImg {
+            @include flex($justify: center, $align: center);
+            @include position(absolute, $right: 12px);
+            @include cnt(24px, 24px, 100%);
+            background: #fff;
+            img {
+              @include cnt(11px, 11px);
+            }
+          }
+        }
+      }
+      .heroCardMain-pr {
+        @include font($size: 14px, $weight: 600);
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .heroCardMain-pr2 {
+        @include font($size: 10px, $weight: 400);
+        @include margin($top: 8px, $left: 10px);
+        text-align: left;
+        color: rgb(129, 139, 156);
+      }
+      .hero-raiting {
+        @include margin($top: 8px, $left: 10px);
+        @include flex($align: center, $gap: 6px);
+        .heroStarImg {
+          @include cnt(13px, 13px);
+        }
+        .heroRaiting-pr1 {
+          @include font(10px, $weight: 500);
+          text-align: left;
+        }
+        .heroRaiting-pr2 {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .heroContainer {
+    .heroContainer-left {
+      @include position(relative, $left: 80px);
+      margin-top: 60px;
+      .heroContainer-left-title {
+        @include font(34px, $weight: 600);
+        width: 384px;
+      }
+      .heroContainer-left-p {
+        @include font(16px, $weight: 400);
+        margin-bottom: 35px;
+        width: 401px;
+      }
+      .hero-btn1 {
+        @include cnt(18rem, 5rem);
+        @include font($size: 16px, $weight: 600);
+      }
+      .hero-btn2 {
+        @include cnt(18rem, 5rem);
+        @include font($size: 16px, $weight: 600);
+      }
+    }
+    .heroRightImg {
+      @include cnt($height: 436px);
+    }
+    .heroContainer-right {
+      position: relative;
+      .heroRightCard {
+        @include position(absolute, 80px, 175px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .heroContainer {
+    @include flex(column, $justify: none, $align: center);
+    .heroContainer-left {
+      @include flex(column, $align: center);
+      @include position(relative, $left: 0px);
+      margin-top: 52px;
+      .heroContainer-left-title {
+        @include font(28px, $weight: 600);
+        margin-bottom: 16px;
+        width: 315px;
+      }
+      .heroContainer-left-p {
+        width: 315px;
+        @include font(14px, $weight: 400);
+        margin-bottom: 32px;
+      }
+      .hero-btn1 {
+        @include cnt(327px,48px);
+        @include font($size: 14px, $weight: 600);
+        margin-bottom: 16px;
+      }
+      .hero-btn2 {
+        @include cnt(327px,48px);
+        @include font($size: 14px, $weight: 600);
+        margin-left: 0px;
+      }
+    }
+    .heroRightImg {
+      @include cnt(375px,$height: 390px);
+    }
+    .heroContainer-right {
+      position: relative;
+      .heroRightCard {
+        @include position(absolute, 112px, 100px);
+        .heroRightCircle {
+          margin-bottom: 4px;
+          @include flex($direction: column, $gap: 4px, $align: center);
+          .heroCircle {
+            @include cnt(32px, 32px, 100%);
+          }
+          .heroCircle2 {
+            @include position(absolute, 12px);
+            @include cnt(12px, 12px, $border-r: 100%);
+          }
+        }
+      }
+      .heroCardMain {
+        @include cnt(128px, 183px, $border-r: 8px);
+        .heroCardMain2 {
+          position: relative;
+          @include cnt(128px, 128px, $border-r: 8px);
+          .heroCardMain2img {
+            @include cnt(120px, 120px);
+            .heroCardMainHeartImg {
+              @include position(absolute, $right: 12px);
+              @include cnt(24px, 24px, 100%);
+              img {
+                @include cnt(11px, 11px);
+              }
+            }
+          }
+        }
+        .heroCardMain-pr {
+          @include font($size: 12px, $weight: 600);
+          margin: 8px 0 0 8px;
+  
+        }
+        .heroCardMain-pr2 {
+          @include font($size: 10px, $weight: 400);
+          @include margin($top: 0px, $left: 8px);
+        }
+        .hero-raiting {
+          @include margin($top: 0px, $left: 8px);
+          @include flex($align: center, $gap: 6px);
+          .heroStarImg {
+            @include cnt(13px, 13px);
+          }
+          .heroRaiting-pr1 {
+            @include font(10px, $weight: 500);
+          }
+        }
+      }
+    }
+  }
+}

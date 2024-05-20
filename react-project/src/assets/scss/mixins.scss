@@ -1,0 +1,42 @@
+@mixin flex($direction: null, $gap: null, $align: null, $justify: null) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($size: null, $family: null, $weight: null, $height: null) {
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin cnt($width: null, $height: null, $border-r: null, $border: null) {
+  width: $width;
+  height: $height;
+  border-radius: $border-r;
+  border: $border;
+}
+
+@mixin position(
+  $position: null,
+  $top: null,
+  $left: null,
+  $right: null,
+  $bottom: null
+) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}

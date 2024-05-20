@@ -1,0 +1,215 @@
+@import "..//..//..//../../assets/scss/maps.scss";
+@import "..//..//..//../../assets/scss/mixins.scss";
+@import "..//..//..//../../assets/scss/veriable.scss";
+
+.detailProductInfo {
+  @include flex(column);
+
+  .productInfo-productname {
+    @include font($size: 2.8rem, $weight: 600);
+    margin-bottom: 1.2rem;
+  }
+  .productInfo-productDescription {
+    @include font($size: 1.6rem, $weight: 400);
+    width: 795px;
+    color: rgb(129, 139, 156);
+    margin-bottom: 3.2rem;
+  }
+  .productInfo-container {
+    @include flex($justify: space-between);
+    margin-bottom: 5rem;
+    .specification {
+      @include cnt(41rem, 27.1rem);
+      @include flex(column);
+      .specification-title {
+        @include font($size: 1.8rem, $weight: 600);
+        margin-bottom: 1.6rem;
+      }
+      .specifition-row1 {
+        @include flex($align: center);
+        padding-left: 10px;
+        @include cnt(100%, 4.6rem);
+        background-color: rgb(249, 249, 249);
+        .specifition-row-pr1 {
+          width: 15rem;
+          @include font($size: 1.6rem, $weight: 400);
+          color: rgb(129, 139, 156);
+          text-align: left;
+        }
+        .specifition-row-pr2 {
+          width: 15rem;
+          text-align: left;
+          @include font($size: 1.6rem, $weight: 500);
+        }
+      }
+      .specifition-row2 {
+        background-color: #fff;
+      }
+    }
+    .inTheBox {
+      @include flex(column, $gap: 1.2rem);
+      // width: 36.9rem;
+      .inTheBox-title {
+        @include font($size: 1.8rem, $weight: 600);
+        margin-bottom: 0.4rem;
+      }
+      .inTheBox-row {
+        @include flex($align: center, $gap: 0.3rem);
+        padding-left: 2px;
+        @include cnt(100%, 2.6rem);
+        .tick-circle {
+          @include cnt(2rem, 2rem);
+        }
+        .inTheBox-row-pr {
+          @include font($size: 1.6rem, $weight: 500);
+        }
+      }
+    }
+    .systemRequired {
+      @include flex(column, $gap: 1.6rem);
+      width: 35.4rem;
+      .systemRequired-title {
+        @include font($size: 1.8rem, $weight: 600);
+      }
+      .systemRequired-pr {
+        @include font($size: 1.6rem, $weight: 400);
+        color: rgb(129, 139, 156);
+      }
+    }
+  }
+  .product-Info-line2 {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .detailProductInfo {
+    .product-info-titles {
+      .product-info-title1 {
+        @include cnt(15.2rem, 5rem);
+        @include font($size: 1.6rem, $weight: 600);
+      }
+      .product-info-title {
+        @include cnt(15.2rem, 5rem);
+
+        @include font($size: 1.6rem, $weight: 600);
+      }
+    }
+    .productInfo-productname {
+      @include font($size: 2rem, $weight: 600);
+    }
+    .productInfo-productDescription {
+      @include font($size: 1.4rem, $weight: 400);
+      width: 69.5rem;
+    }
+    .productInfo-container {
+      .specification {
+        @include cnt(30rem, 24.8rem);
+        .specification-title {
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .specifition-row1 {
+          @include cnt(100%, 4.2rem);
+          .specifition-row-pr1 {
+            width: 12rem;
+            @include font($size: 1.4rem, $weight: 400);
+          }
+          .specifition-row-pr2 {
+            width: 12rem;
+            @include font($size: 1.4rem, $weight: 500);
+          }
+        }
+      }
+      .inTheBox {
+        @include flex(column, $gap: 1.2rem);
+
+        .inTheBox-title {
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .inTheBox-row {
+          @include flex($align: center, $gap: 0.3rem);
+          padding-left: 2px;
+          .inTheBox-row-pr {
+            width: 198px;
+            @include font($size: 1.4rem, $weight: 500);
+          }
+        }
+      }
+      .systemRequired {
+        width: 22.5rem;
+        .systemRequired-title {
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .systemRequired-pr {
+          @include font($size: 1.4rem, $weight: 400);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .detailProductInfo {
+    .productInfo-productname {
+      @include font($size: 1.8rem, $weight: 600);
+      margin-bottom: 0.8rem;
+    }
+    .productInfo-productDescription {
+      @include font($size: 1.2rem, $weight: 400);
+      width: 335px;
+    }
+    .productInfo-container {
+      @include flex(column, $align: center, $justify: center);
+      margin-bottom: 5rem;
+      .specification {
+        justify-content: space-between;
+        @include cnt(32.7rem, 27.1rem);
+        margin-bottom: 3.2rem;
+        .specification-title {
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .specifition-row1 {
+          @include flex($align: center);
+          padding-left: 1.6rem;
+          @include cnt(100%, 4.4rem);
+          .specifition-row-pr1 {
+            width: 13.6rem;
+            @include font($size: 1.4rem, $weight: 400);
+          }
+          .specifition-row-pr2 {
+            width: 13.6rem;
+            @include font($size: 1.4rem, $weight: 500);
+          }
+        }
+      }
+      .inTheBox {
+        @include flex(column, $gap: 1.2rem);
+        margin-bottom: 3.4rem;
+        width: 32.7rem;
+        .inTheBox-title {
+          @include font($size: 1.6rem, $weight: 600);
+          margin-bottom: 0.4rem;
+        }
+        .inTheBox-row {
+          @include flex($align: center, $gap: 0.3rem);
+          @include cnt(100%, 2.2rem);
+
+          .inTheBox-row-pr {
+            width: 32.7rem;
+            @include font($size: 1.4rem, $weight: 500);
+          }
+        }
+      }
+      .systemRequired {
+        width: 327px;
+
+        .systemRequired-title {
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .systemRequired-pr {
+          @include font($size: 1.4rem, $weight: 400);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "descriptionShort": {
+      "type": "string"
+    },
+    "descriptionLong": {
+      "type": "string"
+    },
+    "raiting": {
+      "type": "decimal"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Wireless",
+        "Premium",
+        "Wired",
+        "Bluetooth"
+      ]
+    },
+    "wishList": {
+      "type": "boolean",
+      "default": false
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Black",
+        "White",
+        "Red",
+        "Yellow"
+      ]
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "brand": {
+      "type": "string"
+    }
+  }
+}

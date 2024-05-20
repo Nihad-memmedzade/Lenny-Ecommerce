@@ -1,0 +1,62 @@
+@import "..//..//..//..//..//..//../assets/scss/maps.scss";
+@import "..//..//..//..//..//..//../assets/scss/mixins.scss";
+@import "..//..//..//..//..//..//../assets/scss/veriable.scss";
+
+.reviewsFilter {
+  @include cnt(27.8rem, 55.8rem, 0.8rem, 1px solid rgb(228, 233, 238));
+  padding: 2.4rem;
+  margin-top: 2.4rem;
+  &-title {
+    @include font($size: 2rem, $weight: 600);
+  }
+  &-line {
+    @include cnt(100%, 1px);
+    margin: 1.5rem 0rem;
+    background: rgb(228, 233, 238);
+  }
+  .reviews-bestFilter {
+    margin-bottom: 2.4rem;
+  }
+  .bestFilter-title-container {
+    @include flex($justify: space-between, $align: center);
+    .bestFilter-title {
+      @include font($size: 1.6rem, $weight: 600);
+    }
+    .bestFilter-icon {
+      @include cnt(2rem, 1rem);
+    }
+  }
+  .bestFilter-container {
+    @include flex(column, $gap: 1.5rem);
+    margin-top: 1.2rem;
+    .bestFilter-col {
+      @include flex($align: center);
+      .bestFilter-input {
+        @include cnt(2rem, 2rem);
+        margin-right: 1.1rem;
+      }
+      .bestFilter-icon {
+        @include cnt(1.5rem, 1.5rem);
+        margin-right: 0.5rem;
+      }
+      .bestFilter-span {
+        @include font($size: 1.6rem, $weight: 400);
+        color: rgb(129, 139, 156);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .reviewsFilter {
+    height: 58.8rem;
+    margin-top: 3.2rem;
+    .bestFilter-container {
+      @include flex(column, $gap: 1.6rem);
+      margin-top: 1.5rem;
+      .bestFilter-col {
+        @include flex($align: center);
+      }
+    }
+  }
+}

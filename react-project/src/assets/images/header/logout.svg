@@ -1,0 +1,12 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector" d="M17.44 14.62L20 12.06L17.44 9.5" stroke="#E04124" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M9.76 12.06L19.93 12.06" stroke="#E04124" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<path id="Vector" d="M11.76 20C7.34 20 3.76 17 3.76 12C3.76 7 7.34 4 11.76 4" stroke="#E04124" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	<g opacity="0.000000">
+		<path id="Vector" d="M0 24L24 24L24 0L0 0L0 24ZM23 1L23 23L1 23L1 1L23 1Z" fill="#E04124" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

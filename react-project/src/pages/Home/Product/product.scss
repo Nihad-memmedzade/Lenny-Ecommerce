@@ -1,0 +1,76 @@
+@import "../../../assets/scss/maps.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/veriable.scss";
+
+.product {
+  @include flex(column, 52px, center);
+  margin-bottom: 16rem;
+  .product-title {
+    @include flex(column, 24px, center, center);
+    .product-title1 {
+      @include font($size: 38px, $weight: 600);
+    }
+    .product-title2 {
+      @include font($size: 18px, $weight: 400);
+      color: rgb(129, 139, 156);
+    }
+  }
+  .product-container {
+    width: 1200px;
+    @include flex(row, 24px, center, center);
+    flex-wrap: wrap;
+  }
+  .productButton {
+    background: #fff;
+    @include cnt(200px, 53px, 8px, 1px solid rgb(30, 76, 47));
+    color: rgb(30, 76, 47);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .product {
+    margin-bottom: 14rem;
+    .product-title {
+      @include flex(column, 24px, center, center);
+      .product-title1 {
+        @include font($size: 28px, $weight: 600);
+      }
+      .product-title2 {
+        @include font($size: 16px, $weight: 400);
+      }
+    }
+    .product-container {
+      width: 864px;
+      @include flex(row, 24px, center, center);
+      flex-wrap: wrap;
+    }
+    .productButton {
+      @include cnt(180px, 48px);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .product {
+    @include flex(column, 29px, center);
+    margin: 0 30px;
+    margin-bottom: 10rem;
+    .product-title {
+      @include flex(column, 24px, center, center);
+      .product-title1 {
+        @include font($size: 18px, $weight: 600);
+      }
+      .product-title2 {
+        @include font($size: 14px, $weight: 400);
+      }
+    }
+    .product-container {
+      width: 327px;
+      @include flex(row, 17px, center, center);
+    }
+    .productButton {
+      @include cnt(131px, 48px);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../assets/scss/veriable.scss";
+@import "../../assets/scss/maps.scss";
+@import "../../assets/scss/mixins.scss";
+
+.productList {
+  display: flex;
+  gap: 32px;
+  padding: 0 120px 0 120px;
+  .productListFilter {
+    &-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 278px;
+      padding: 24px;
+      border: solid rgb(228, 233, 238);
+    }
+    .productListFilter-1-title {
+      display: flex;
+      justify-content: space-between;
+      .productListFilter-1-p {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .productListFilter-1-img {
+        width: 11px;
+        height: 20px;
+      }
+    }
+    .productListFilter-1-row {
+      display: flex;
+      gap: 10px;
+      .productListFilter-1-input {
+        width: 24px;
+        height: 24px;
+      }
+      .productListFilter-1-row-p {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(129, 139, 156);
+      }
+    }
+    .sortPrice {
+      width: 279px;
+      margin-top: 24px;
+      padding: 16px;
+      border: solid rgb(228, 233, 238);
+      .sortPrice-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .priceMin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+margin-bottom: 10px;
+        .priceMin-title {
+          color: rgb(129, 139, 156);
+          font-size: 16px;
+        }
+        .price1 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .price-line {
+        width: 1px;
+        height: 36px;
+        background-color:  rgb(185, 191, 201);
+      }
+    }
+  }
+
+  .productBySearch {
+    display: flex;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+  .random {
+    width: 300px;
+    height: 50px;
+  }
+  .random2 {
+    width: 300px;
+    height: 50px;
+  }
+  button {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .productList {
+    display: flex;
+    gap: 32px;
+    padding: 0 80px 0 80px;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .productList {
+    display: flex;
+    gap: 32px;
+    padding: 0 24px 0 24px;
+
+    .productListFilter {
+      display: none;
+    }
+    .productBySearch {
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+    }
+  }
+}

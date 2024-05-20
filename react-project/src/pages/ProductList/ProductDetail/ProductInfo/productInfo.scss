@@ -1,0 +1,66 @@
+@import "../../../../assets/scss/maps.scss";
+@import "../../../../assets/scss/mixins.scss";
+@import "../../../../assets/scss/veriable.scss";
+
+.productInfo {
+  .product-info-titles {
+    @include flex(row, $align: center);
+    .product-info-title1 {
+      cursor: pointer;
+      @include cnt(16.5rem, 5.3rem);
+      @include font($size: 1.8rem, $weight: 600);
+      text-align: center;
+      border-bottom: 2px solid rgb(14, 45, 14);
+      padding-top: 17px;
+    }
+    .product-info-title {
+      cursor: pointer;
+      @include cnt(16.5rem, 5.3rem);
+      @include font($size: 1.8rem, $weight: 600);
+      text-align: center;
+      border-bottom: 1px solid rgb(228, 233, 238);
+      padding-top: 17px;
+      color: rgb(129, 139, 156);
+    }
+  }
+  .product-Info-line1 {
+    @include cnt(100%, 0.1rem);
+    margin: -0.1rem 0 3.2rem 0;
+    background-color: rgb(228, 233, 238);
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .productInfo {
+    .product-info-titles {
+      .product-info-title1 {
+        @include cnt(15.2rem, 5rem);
+        @include font($size: 1.6rem, $weight: 600);
+        text-align: center;
+      }
+      .product-info-title {
+        @include cnt(15.2rem, 5rem);
+        @include font($size: 1.4rem, $weight: 600);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .productInfo {
+    .product-info-titles {
+      width: 100%;
+      position: relative;
+      overflow-x: scroll;
+      .product-info-title1 {
+        @include cnt(9.5rem, 4.2rem);
+
+        @include font($size: 1.1rem, $weight: 600);
+      }
+      .product-info-title {
+        @include cnt(9.5rem, 4.2rem);
+        @include font($size: 1.1rem, $weight: 600);
+      }
+    }
+  }
+}

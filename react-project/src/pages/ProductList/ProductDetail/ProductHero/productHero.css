@@ -1,0 +1,382 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiperSlide {
+  height: 134px;
+  border-radius: 8px;
+  background-color: rgb(246, 246, 246);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 134px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 52px;
+}
+
+.mySwiper {
+  width: 585px;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  border-radius: 8px;
+  /* height: 20%; */
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 1;
+}
+.mySwiper2 .swiper-slide {
+  width: 134px;
+  height: 100%;
+  opacity: 1;
+}
+.mySwiper2 .swiper-slide-visible {
+  width: 134px;
+  height: 100%;
+  opacity: 1;
+}
+
+.mySwiper2 .swiper-slide-fully-visible {
+  width: 134px !important;
+  height: 100%;
+  opacity: 1;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.swiper-slide-active {
+  background-color: rgb(246, 246, 246);
+  width: 44px;
+  height: 44px;
+}
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  opacity: 0.5;
+  background: rgba(11, 15, 14, 0.16);
+  border-radius: 100%;
+}
+.swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  opacity: 0.5;
+  background: rgba(11, 15, 14, 0.16);
+  border-radius: 100%;
+}
+.swiper-button-next:after {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.swiper-button-prev:after {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.productHero-left {
+  width: 585px;
+}
+.swiper-wrapper {
+  height: 134px;
+  gap: 16px;
+}
+.swiper-slide-visible img {
+  width: 86px;
+  background-color: rgb(246, 246, 246);
+  height: 86px;
+}
+.swiper-slide-visible img {
+  width: 86px;
+  height: 86px;
+}
+.mySwiper2 .swiper-slide-fully-visible {
+  width: 134px;
+  height: 134px;
+}
+.productHero {
+  display: flex;
+  gap: 42px;
+}
+.productHero-right-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: 495px;
+}
+
+.productHero-raiting-sold {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.productHero-StarIcon {
+  width: 20px;
+  height: 20px;
+}
+.productHero-raiting {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.productHero-raiting-circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: rgb(228, 233, 238);
+}
+
+.productHero-raiting-p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.productHero-raiting-span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.productHero-right-price {
+  font-weight: 600;
+  font-size: 28px;
+  color: rgb(29, 158, 52);
+}
+.productHero-right-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(199, 210, 230);
+  margin-top: 24px;
+}
+.productHero-line {
+  margin-top: 23px;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(129, 139, 156);
+  opacity: 0.5;
+}
+
+.productHero-right {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.productHero-types {
+  margin-top: 12px;
+}
+.productHero-types-title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.productHero-types-select {
+  border: 1px solid rgb(228, 233, 238);
+  width: 144px;
+  height: 44px;
+  border-radius: 8px;
+  padding: 0px 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.productVariant-cnt {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 52px;
+}
+
+.productHero-right-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.productHero-right-btn1 {
+  width: 260px;
+  height: 53px;
+  background-color: rgb(30, 76, 47);
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.productHero-right-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  color: rgb(30, 76, 47);
+  border: 2px solid rgb(30, 76, 47);
+}
+.productHero-right-btn2 img {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .productHero-left {
+    width: 422px;
+  }
+  .mySwiper {
+    width: 422px;
+    height: 380px;
+  }
+  .swiper-slide img {
+    width: 240px;
+    height: 240px;
+  }
+  .swiper-button-next {
+    width: 33px;
+    height: 33px;
+  }
+  .swiper-button-prev {
+    width: 33px;
+    height: 33px;
+  }
+  .swiper-button-next:after {
+    font-size: 14px;
+  }
+  .swiper-button-prev:after {
+    font-size: 14px;
+  }
+  .swiper-wrapper {
+    height: 99px;
+    gap: 8px;
+  }
+  .swiperSlide {
+    height: 99px;
+  }
+  .mySwiper2 .swiper-slide-fully-visible {
+    width: 99px !important;
+    height: 99px;
+  }
+  .swiper-slide-visible img {
+    width: 60px;
+    height: 60px;
+  }
+  .productHero {
+    gap: 32px;
+  }
+  .productHero-right-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .productHero-raiting {
+    font-size: 14px;
+  }
+  .productHero-raiting-p {
+    font-size: 14px;
+  }
+  .productHero-raiting-span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .productHero-right-price {
+    font-size: 20px;
+  }
+  .productHero-right-description {
+    font-size: 14px;
+  }
+  .productHero-right-btn1 {
+    width: 197px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .productHero {
+    gap: 24px;
+    flex-direction: column;
+  }
+  .mySwiper {
+    width: 327px;
+    height: 280px;
+    margin: 0;
+  }
+  .productHero-left {
+    width: 327px;
+    height: 367px;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-slide img {
+    width: 200px;
+    height: 200px;
+  }
+  .mySwiper2 .swiper-slide-fully-visible {
+    width: 76px !important;
+    height: 75px;
+  }
+  .swiper-slide-visible img {
+    width: 50px;
+    height: 50px;
+  }
+  .productHero-right-title {
+    width: 311px;
+    margin-bottom: 4px;
+  }
+  .productHero-StarIcon {
+    width: 14px;
+    height: 16px;
+  }
+  .productHero-raiting {
+    font-size: 14px;
+  }
+  .productHero-right-buttons {
+    flex-direction: column;
+    margin-bottom: 63px;
+  }
+  .productHero-right-btn1 {
+    width: 327px;
+    height: 48px;
+}
+}

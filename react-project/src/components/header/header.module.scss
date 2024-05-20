@@ -1,0 +1,167 @@
+@import "..//../assets/scss/maps.scss";
+@import "..//../assets/scss/mixins.scss";
+@import "..//../assets/scss/veriable.scss";
+
+.header {
+  @include flex($align: center, $justify: space-between);
+  position: relative;
+  padding: $header-padding;
+  .headerLogo {
+    @include cnt(104px, 32px);
+  }
+  .headerInputAndSelect {
+    @include cnt(856px, 44px, 8px);
+    @include flex($align: center);
+    background: rgb(246, 248, 250);
+    padding: 0 10px 0 16px;
+    select {
+      border: none;
+      background-color: rgb(246, 248, 250);
+      option {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+    .line {
+      @include cnt(1px, 25px);
+      margin: 0 8px;
+      background: rgb(228, 233, 238);
+    }
+    .headerInput {
+      @include cnt($width: 678px, $border: none);
+      background: rgb(246, 248, 250);
+      outline: none;
+    }
+    .headerSearch {
+      @include cnt(24px, 24px);
+    }
+  }
+  .headerRight {
+    @include flex($align: center, $gap: 16px);
+    .rightImg1 {
+      cursor: pointer;
+      @include cnt(48px, 48px);
+      position: relative;
+      .shoppingCircle {
+        @include flex($justify: center, $align: center);
+        @include cnt(1.4rem, 1.4rem, 100%);
+        @include position(absolute, $top: 9px, $right: 10px);
+
+        background-color: rgb(224, 65, 36);
+        .shoppingCircleNumber {
+          font-size: 9px;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+    .line2 {
+      @include cnt(1px, 25px);
+      margin: 0 8px;
+      background: rgb(228, 233, 238);
+    }
+    .rightImg2 {
+      cursor: pointer;
+      @include cnt(48px, 48px);
+    }
+    .rightImg3 {
+      cursor: pointer;
+      @include cnt(2.4rem, 2.4rem);
+    }
+    .rightImg4 {
+      cursor: pointer;
+      @include cnt(2.7rem, 3.1rem);
+    }
+    .rightImg6 {
+      @include cnt(3.7rem, 3.7rem);
+      cursor: pointer;
+    }
+    .headMenu {
+      cursor: pointer;
+      display: none;
+      @include cnt(2.4rem, 2.4rem);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .header {
+    padding: $header-tablet-p;
+    .headerInputAndSelect {
+      @include cnt(480px);
+      margin: 0px 52px 0px 38px;
+      select {
+        option {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .header {
+    padding: $header-mobile-p;
+    .headMenu {
+      display: block;
+    }
+    .headerLogo {
+      display: none;
+    }
+    .headerInputAndSelect {
+      @include cnt(100%, 34px);
+      padding: 0px 12px;
+      margin: 0px;
+      select {
+        display: none;
+      }
+      .line {
+        display: none;
+      }
+      .headerSearch {
+        @include cnt(20px, 20px);
+      }
+      .headerInput {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+    .headerRight {
+      @include flex($align: center, $gap: 0px);
+     
+      .rightImg1 {
+        @include cnt(35px, 35px);
+        .shoppingCircle {
+    
+          @include cnt(1rem, 1rem, 100%);
+          @include position(absolute, $top: 9px, $right: 10px);
+        }
+      }
+      .line2 {
+        @include cnt(1px, 25px);
+        margin: 0 8px;
+        background: rgb(228, 233, 238);
+      }
+      .rightImg2 {
+        display: none;
+      }
+      .rightImg3 {
+        width: 20px;
+        height: 20px;
+      }
+      .rightImg4 {
+        width: 16px;
+        height: 15px;
+        margin-left: 4px;
+      }
+      .rightImg6 {
+        display: none;
+      }
+      .headMenu {
+        display: block;
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../../assets/scss/maps.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/veriable.scss";
+
+.hero2 {
+  @include flex(row, 120px, center, center);
+  @include cnt(120rem, 40rem, 1.6rem);
+
+  margin: 0 auto 105px auto;
+  background: rgb(252, 236, 225);
+  .hero2-left {
+    @include cnt(382px, 430px);
+  }
+  .hero2-right {
+    .hero2-title {
+      @include font($size: 38px, $weight: 600);
+      margin-bottom: 16px;
+    }
+    .hero2-description {
+      @include font($size: 18px, $weight: 400);
+      color: rgb(129, 139, 156);
+      margin-bottom: 3.2rem;
+    }
+    .hero2-btn1 {
+      @include cnt(20rem, 5.3rem, 0.8rem);
+    }
+    .hero2-btn2 {
+      margin-left: 16px;
+      @include cnt(20rem, 5.3rem, 0.8rem, 1px solid rgb(30, 76, 47));
+      background: none;
+      color: rgb(30, 76, 47);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .hero2 {
+    @include flex(row, 60px, center, center);
+    @include cnt(86.4rem, 34.1rem, 1.6rem);
+
+    margin: 0 auto 81px auto;
+    .hero2-left {
+      @include cnt(322px, 362px);
+    }
+    .hero2-right {
+      .hero2-title {
+        @include font($size: 28px, $weight: 600);
+        margin-bottom: 16px;
+      }
+      .hero2-description {
+        @include font($size: 18px, $weight: 400);
+        color: rgb(129, 139, 156);
+        margin-bottom: 3.2rem;
+        width: 401px;
+      }
+      .hero2-btn1 {
+        @include cnt(18rem, 4.8rem, 0.8rem);
+      }
+      .hero2-btn2 {
+        @include cnt(18rem, 4.8rem);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .hero2 {
+    @include flex(column, 32px, flex-start);
+    @include cnt(327px, 444px);
+
+    margin: 0 auto 103px auto;
+    .hero2-left {
+      @include cnt(157px, 176px);
+      margin-left: 24px;
+    }
+    .hero2-right {
+      margin-left: 24px;
+      .hero2-title {
+        @include font($size: 18px, $weight: 600);
+        margin-bottom: 12px;
+      }
+      .hero2-description {
+        @include font($size: 14px, $weight: 400);
+        width: 279px;
+      }
+      .hero2-btn1 {
+        @include cnt(133px, 48px);
+      }
+      .hero2-btn2 {
+        margin-left: 16px;
+        @include cnt(133px, 48px);
+
+        background: none;
+        color: rgb(30, 76, 47);
+      }
+    }
+  }
+}

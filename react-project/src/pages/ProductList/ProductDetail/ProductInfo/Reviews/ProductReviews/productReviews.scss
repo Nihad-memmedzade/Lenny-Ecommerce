@@ -1,0 +1,200 @@
+@import "..//..//..//..//..//../assets/scss/maps.scss";
+@import "..//..//..//..//..//../assets/scss/mixins.scss";
+@import "..//..//..//..//..//../assets/scss/veriable.scss";
+
+.productReviews {
+  .productReviews-title {
+    @include font($size: 2rem, $weight: 600);
+    margin-bottom: 2.4rem;
+  }
+  .productReviews-container {
+    padding: 2.4rem;
+    @include flex($justify: space-between);
+    @include cnt(
+      100%,
+      $border-r: 0.8rem,
+      $border: 1px solid rgb(228, 233, 238)
+    );
+    .productReviews-container-left {
+      .productReviews-container-left-cnt {
+        @include flex($gap: 1.6rem);
+        .productReviews-container-raitingCircle-cnt {
+          position: relative;
+          @include cnt(8.4rem, 8.4rem);
+          .productReviews-num {
+            @include position(absolute, 2.8rem, 2.6rem);
+            @include font($size: 2rem, $weight: 600);
+          }
+        }
+        .productReviews-container-star-cnt {
+          @include flex(column, $gap: 1rem, $justify: center);
+          .productReviews-stars {
+            @include flex($gap: 0.7rem, $justify: center);
+            .productReviews-star {
+              @include cnt(1.7rem, 1.7rem);
+            }
+          }
+          .productReviews-container-star-p {
+            @include font($size: 1.6rem, $weight: 400);
+          }
+        }
+      }
+    }
+    .productReviews-container-right {
+      @include flex(column, $gap: 1.2rem);
+      .productReviews-container-right-col1 {
+        @include flex($gap: 2.3rem, $align: center);
+        .productReviews-container-right-col1-left {
+          @include flex($gap: 0.6rem);
+          .productReviews-container-right-col1-left-span {
+            @include font($size: 1.6rem, $weight: 500);
+          }
+          .productReviews-container-right-col1-left-icon {
+            @include cnt(1.7rem, 1.7rem);
+          }
+        }
+        .productReviews-container-right-col1-center {
+          position: relative;
+          .productReviews-container-right-col1-line1 {
+            @include cnt(66.9rem, 0.8rem, 0.8rem);
+            background: rgb(228, 233, 238);
+          }
+          .productReviews-container-right-col1-line2 {
+            @include position(absolute, 0rem);
+            @include cnt(56.2rem, 0.8rem, 0.8rem);
+            background: rgb(29, 158, 52);
+          }
+          .productReviews-container-right-col1-line2-1 {
+            width: 31.8rem;
+          }
+          .productReviews-container-right-col1-line2-2 {
+            width: 10rem;
+          }
+        }
+        .productReviews-container-right-col1-right {
+          @include font($size: 1.6rem, $weight: 500);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .productReviews {
+    .productReviews-container {
+      .productReviews-container-left {
+        .productReviews-container-left-cnt {
+          .productReviews-container-star-cnt {
+            @include flex(column, $gap: 1rem, $justify: center);
+
+            .productReviews-container-star-p {
+              @include font($size: 1.4rem, $weight: 500);
+            }
+          }
+        }
+      }
+      .productReviews-container-right {
+        .productReviews-container-right-col1 {
+          .productReviews-container-right-col1-left {
+            .productReviews-container-right-col1-left-span {
+              @include font($size: 1.4rem, $weight: 500);
+            }
+          }
+          .productReviews-container-right-col1-center {
+            position: relative;
+            .productReviews-container-right-col1-line1 {
+              @include cnt(42.1rem, 0.8rem, 0.8rem);
+            }
+            .productReviews-container-right-col1-line2 {
+              @include cnt(38.5rem, 0.8rem, 0.8rem);
+            }
+            .productReviews-container-right-col1-line2-1 {
+              width: 21.1rem;
+            }
+            .productReviews-container-right-col1-line2-2 {
+              width: 3.1rem;
+            }
+          }
+          .productReviews-container-right-col1-right {
+            @include font($size: 1.4rem, $weight: 500);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: map-get($breakpoints,sm)){
+  .productReviews {
+    .productReviews-title {
+      @include font($size: 1.6rem, $weight: 600);
+      margin-bottom: 1.6rem;
+    }
+    .productReviews-container {
+      padding: 1.6rem;
+      @include flex(column,$gap:2.3rem);
+  
+      .productReviews-container-left {
+        .productReviews-container-left-cnt {
+          @include flex($gap: 1.7rem);
+          .productReviews-container-raitingCircle-cnt {
+     
+            @include cnt(6.4rem, 6.4rem);
+            .productReviews-num {
+              @include position(absolute, 2.6rem, 2.4rem);
+              @include font($size: 1.2rem, $weight: 500);
+            }
+          }
+          .productReviews-container-star-cnt {
+            @include flex(column, $gap: 0.5rem, $justify: center);
+           
+            .productReviews-container-star-p {
+              @include font($size: 1.2rem, $weight: 500);
+            }
+          }
+        }
+      }
+      .productReviews-container-right {
+        @include flex(column, $gap: 1rem);
+        .productReviews-container-right-col1 {
+          @include flex($gap: 1.3rem, $align: center);
+          .productReviews-container-right-col1-left {
+            @include flex($gap: 0.1rem);
+            .productReviews-container-right-col1-left-span {
+              @include font($size: 1.2rem, $weight: 500);
+            }
+            .productReviews-container-right-col1-left-icon {
+              @include cnt(1.3rem, 1.3rem);
+            }
+          }
+          .productReviews-container-right-col1-center {
+
+            .productReviews-container-right-col1-line1 {
+              @include cnt(20.1rem, 0.8rem, 0.8rem);
+            
+            }
+            .productReviews-container-right-col1-line2 {
+              
+              @include cnt(16.0rem, 0.8rem, 0.8rem);
+           
+            }
+            .productReviews-container-right-col1-line2-1 {
+              width: 3rem;
+            }
+            .productReviews-container-right-col1-line2-2 {
+              width: 0rem;
+            }
+          }
+          .productReviews-container-right-col1-right {
+            @include font($size: 1.2rem, $weight: 500);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}

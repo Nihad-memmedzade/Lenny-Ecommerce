@@ -1,0 +1,134 @@
+@import "..//..//..//..//..//..//../assets//scss/maps.scss";
+@import "..//..//..//..//..//..//../assets//scss/mixins.scss";
+@import "..//..//..//..//..//..//../assets//scss/veriable.scss";
+
+.reviewsComment {
+  @include flex(column);
+  margin: 3.2rem 0rem 3.2rem 0rem;
+  .reviewsComment-stars {
+    margin-bottom: 1.7rem;
+    @include flex($gap: 0.7rem);
+    .reviewsComment-star {
+      @include cnt(1.3rem, 1.3rem);
+    }
+  }
+  .reviewsComment-comment {
+    @include font($size: 1.8rem, $weight: 600);
+    margin-bottom: 0.4rem;
+  }
+  .reviewsComment-date {
+    @include font($size: 1.6rem, $weight: 400);
+    color: rgb(129, 139, 156);
+  }
+  .user-container {
+    @include flex($justify: space-between);
+    margin-top: 2.4rem;
+    .user-pp-and-name {
+      @include flex($gap: 1.2rem, $align: center);
+      .user-pp {
+        @include cnt(3.2rem, 3.2rem);
+      }
+      .userName-reviews {
+        @include font($size: 1.6rem, $weight: 500);
+      }
+    }
+    .user-container-buttons {
+      @include flex($gap: 1.6rem);
+      .user-container-btn1 {
+        @include font($size: 1.6rem, $weight: 400);
+        @include flex($align: center, $justify: center, $gap: 0.8rem);
+        @include cnt(8rem, 5rem, 0.4rem, 1px solid rgb(228, 233, 238));
+        background: #fff;
+        .user-container-btn1-img {
+          @include cnt(2.4rem, 2.4rem);
+        }
+      }
+      .user-container-btn2 {
+        @include cnt(4.8rem, 4.8rem);
+      }
+    }
+  }
+}
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .reviewsComment {
+    .reviewsComment-comment {
+      @include font($size: 1.6rem, $weight: 600);
+    }
+    .reviewsComment-date {
+      @include font($size: 1.4rem, $weight: 400);
+    }
+    .user-container {
+      margin-top: 1.6rem;
+      .user-pp-and-name {
+        .user-pp {
+          @include cnt(2.8rem, 2.8rem);
+        }
+        .userName-reviews {
+          @include font($size: 1.4rem, $weight: 500);
+        }
+      }
+      .user-container-buttons {
+        @include flex($gap: 1.2rem);
+        .user-container-btn1 {
+          @include font($size: 1.4rem, $weight: 400);
+
+          @include cnt(8rem, 4.6rem);
+
+          .user-container-btn1-img {
+            @include cnt(2rem, 2rem);
+          }
+        }
+        .user-container-btn2 {
+          @include cnt(4.4rem, 4.4rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .reviewsComment {
+    margin: 2.4rem 0rem 2.4rem 0rem;
+    .reviewsComment-stars {
+      margin-bottom: 1.2rem;
+
+      .reviewsComment-star {
+        @include cnt(1.7rem, 1.7rem);
+      }
+    }
+    .reviewsComment-comment {
+      @include font($size: 1.4rem, $weight: 600);
+      margin-bottom: 0.2rem;
+    }
+    .reviewsComment-date {
+      @include font($size: 1.2rem, $weight: 400);
+    }
+    .user-container {
+      margin-top: 1.6rem;
+      .user-pp-and-name {
+        @include flex($gap: 0.8rem, $align: center);
+        .user-pp {
+          @include cnt(2.4rem, 2.4rem);
+        }
+        .userName-reviews {
+          @include font($size: 1.2rem, $weight: 500);
+        }
+      }
+      .user-container-buttons {
+        @include flex($gap: 0.8rem);
+        .user-container-btn1 {
+          @include font($size: 1.2rem, $weight: 400);
+          @include flex($align: center, $justify: center, $gap: 0.4rem);
+          @include cnt(6.2rem, 3.2rem, 0.8rem);
+
+          .user-container-btn1-img {
+            @include cnt(2rem, 2rem);
+          }
+        }
+        .user-container-btn2 {
+          @include cnt(3.2rem, 3.2rem);
+        }
+      }
+    }
+  }
+}

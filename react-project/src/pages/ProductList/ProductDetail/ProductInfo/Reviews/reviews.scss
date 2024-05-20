@@ -1,0 +1,22 @@
+@import "..//..//..//..//../assets/scss/maps.scss";
+@import "..//..//..//..//../assets/scss/mixins.scss";
+@import "..//..//..//..//../assets/scss/veriable.scss";
+
+
+
+
+
+
+
+
+.reviewsList-reviewsFilter {
+  @include flex($gap: 4rem);
+
+}
+@media screen and (max-width: map-get($breakpoints,sm)){
+.reviews-Filter1{
+  display: none;
+}
+
+
+}

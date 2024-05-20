@@ -1,0 +1,79 @@
+.userLogin {
+  position: absolute;
+  width: 410px;
+
+  padding: 24px;
+  top: 125px;
+  right: 125px;  background-color: rgb(255, 255, 255);
+  .userLogin-top-container {
+    display: flex;
+    gap: 16px;
+    .userLogin-pp {
+      width: 58px;
+      height: 58px;
+    }
+    .userLogin-top-user {
+      .userLogin-top-username {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .userLogin-top-member {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(129, 139, 156);
+      }
+    }
+  }
+  .line-userLogin {
+    width: 100%;
+    height: 1px;
+    background: rgb(228, 233, 238);
+    margin-top: 23px;
+  }
+  .userLogin-Wallet {
+   
+    margin-top: 24px;
+
+    .userLogin-Wallet-title {
+      margin-bottom: 17px;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgb(129, 139, 156);
+    }
+    .wallet-balance {
+      .wallet-balance-p2{
+        font-size: 16px;
+        font-weight: 600;
+        color: red;
+        cursor: pointer;
+      }
+      .wallet-Balance-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        .wallet-Balance-row1 {
+          display: flex;
+          gap: 13px;
+          .walletImg1 {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+          }
+          .logOutimg{
+            cursor: pointer;
+          }
+          .wallet-balance-p {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(129, 139, 156);
+            cursor: pointer;
+          }
+        }
+        .wallet-balance-Price {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

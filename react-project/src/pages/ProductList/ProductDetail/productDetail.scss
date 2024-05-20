@@ -1,0 +1,23 @@
+@import "..//..//../assets//scss/maps.scss";
+@import "..//..//../assets//scss/mixins.scss";
+@import "..//..//../assets//scss/veriable.scss";
+
+.productDetail {
+  margin: $product-info-margin;
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .productDetail {
+    margin: $product-info-margin-xl;
+  }
+}
+
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+    .productDetail {
+      margin: $product-info-margin-sm;;
+    }
+  }
+
+
+

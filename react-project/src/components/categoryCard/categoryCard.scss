@@ -1,0 +1,60 @@
+@import "../../assets/scss/maps.scss";
+@import "../../assets/scss/mixins.scss";
+@import "../../assets/scss/veriable.scss";
+
+.categoryCard {
+  @include flex(column, $align: center, $justify: center);
+  @include cnt(180px, 198px, 12px, 2px solid rgb(228, 233, 238));
+  .categoryCardImg {
+    @include cnt(32px, 44px);
+  }
+  .categoryCard-productName {
+    width: 122px;
+    text-align: center;
+    @include font($size: 20px, $weight: 600);
+    @include margin($top: 28px, $bottom: 0px);
+  }
+  .categoryCard-productAmount {
+    width: 96px;
+    text-align: center;
+    @include font($size: 16px, $weight: 400);
+    @include margin($top: 6px, $bottom: 0px);
+    color: rgb(129, 139, 156);
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .categoryCard {
+    @include cnt(124px, 143px);
+    .categoryCardImg {
+      @include cnt(26px, 36px);
+    }
+    .categoryCard-productName {
+      width: 98px;
+      @include font($size: 16px);
+      @include margin($top: 15px);
+    }
+    .categoryCard-productAmount {
+      width:105px;
+    
+      @include font($size: 14px);
+      @include margin($top: 2px);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .categoryCard {
+    @include cnt(120px, 126px);
+    .categoryCardImg {
+      @include cnt(20px, 27px);
+    }
+    .categoryCard-productName {
+      @include font($size: 14px);
+      @include margin($top: 10px);
+    }
+    .categoryCard-productAmount {
+      @include font($size: 12px);
+    }
+  }
+}

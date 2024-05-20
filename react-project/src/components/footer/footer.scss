@@ -1,0 +1,144 @@
+@import "..//../assets/scss/maps.scss";
+@import "..//../assets/scss/mixins.scss";
+@import "..//../assets/scss/veriable.scss";
+
+footer {
+  @include flex(column);
+  margin-top: 120px;
+  background: $hero-footer-background;
+  .footer-top {
+    @include flex($justify: space-between);
+    padding: 91px 120px 52px 120px;
+    .footer-col1 {
+      @include flex(column, 25px);
+      .logoFooter {
+        @include cnt(12.7rem, 3.9rem);
+      }
+      .footer-col-pr-1 {
+        width: 313px;
+        @include font($size: 16px, $weight: 400);
+      }
+    }
+    .footer-col {
+      @include flex(column, 12px);
+      .footer-col-title {
+        @include font($size: 2rem, $weight: 600);
+        margin-bottom: 4px;
+      }
+      .footer-col-pr {
+        @include font($size: 16px, $weight: 400);
+      }
+    }
+  }
+  .footer-bottom {
+    @include cnt($height: 5.8rem);
+    background: rgb(241, 241, 241);
+    @include flex($justify: space-between, $align: center);
+    padding: 0 120px;
+    &-left {
+      @include font($size: 1.6rem, $weight: 400);
+    }
+    &-right {
+      @include flex($gap: 32px);
+      .footer-bottom-right-pr1 {
+        @include font($size: 1.6rem, $weight: 400);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  footer {
+    @include flex(column);
+    margin-top: 80px;
+    .footer-top {
+      padding: 50px 80px 60px 80px;
+      .footer-col1 {
+        @include flex(column, 25px);
+        .logoFooter {
+          @include cnt(10.6rem, 3.3rem);
+        }
+        .footer-col-pr-1 {
+          width: 221px;
+          @include font($size: 12px, $weight: 400);
+        }
+      }
+      .footer-col {
+        @include flex(column, 12px);
+        .footer-col-title {
+          @include font($size: 1.6rem, $weight: 600);
+          margin-bottom: 4px;
+        }
+        .footer-col-pr {
+          @include font($size: 14px, $weight: 400);
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 0 80px;
+      &-left {
+        @include font($size: 1.4rem, $weight: 400);
+      }
+      &-right {
+        @include flex($gap: 32px);
+        .footer-bottom-right-pr1 {
+          @include font($size: 1.4rem, $weight: 400);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  footer {
+    @include flex(column);
+    margin-top: 60px;
+    .footer-top {
+      @include flex($justify: space-between);
+      flex-wrap: wrap;
+
+      padding: 40px 24px 40px 24px;
+      .footer-col1 {
+        @include flex(column, 16px);
+        width: 313px;
+        margin-bottom: 32px;
+        .logoFooter {
+          @include cnt(10.2rem, 3.2rem);
+        }
+        .footer-col-pr-1 {
+          width: 313px;
+          width: 313px;
+          @include font($size: 14px, $weight: 400);
+        }
+      }
+      .footer-col {
+        width: 163px;
+        margin-bottom: 44px;
+        @include flex(column, 12px);
+        .footer-col-title {
+          @include font($size: 1.6rem, $weight: 600);
+          margin-bottom: 4px;
+        }
+        .footer-col-pr {
+          @include font($size: 14px, $weight: 400);
+        }
+      }
+    }
+    .footer-bottom {
+      @include flex(column);
+      @include cnt($height: 5.8rem);
+      padding: 16px 80px;
+      &-left {
+        text-align: center;
+        width: 256px;
+        @include font($size: 1.4rem, $weight: 400);
+      }
+      &-right {
+        @include flex($gap: 32px);
+        .footer-bottom-right-pr1 {
+          @include font($size: 1.4rem, $weight: 400);
+        }
+      }
+    }
+  }
+}

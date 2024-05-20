@@ -1,0 +1,68 @@
+@import "../../assets/scss/maps.scss";
+@import "../../assets/scss/mixins.scss";
+@import "../../assets/scss/veriable.scss";
+
+.articleCard {
+  @include flex(column, 16px);
+  @include cnt(38.4rem, 44.4rem);
+  .articleCardImg {
+    @include cnt(38.4rem, 28rem, 8px);
+  }
+  &-date {
+    @include font($size: 1.6rem, $weight: 400);
+    color: rgb(129, 139, 156);
+  }
+  &-title {
+    @include font($size: 2rem, $weight: 600);
+  }
+  &-description {
+    width: 313px;
+    @include font($size: 1.6rem, $weight: 400);
+    color: rgb(129, 139, 156);
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .articleCard {
+    @include flex(column, 16px);
+    @include cnt(272px, 316px);
+    .articleCardImg {
+      @include cnt(272px, 316px);
+    }
+    &-date {
+      @include font($size: 1.6rem, $weight: 400);
+    }
+    &-title {
+      width: 270px;
+      @include font($size: 1.6rem, $weight: 600);
+    }
+    &-description {
+      width:272px;
+      @include font($size: 1.4rem, $weight: 400);
+    }
+  }
+  
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)){
+  .articleCard {
+    @include flex(column, 10px);
+    @include cnt(327px,318px);
+    .articleCardImg {
+      @include cnt(327px,180px);
+    }
+    &-date {
+      @include font($size: 1.6rem, $weight: 400);
+      color: rgb(129, 139, 156);
+    }
+    &-title {
+      width: 327px;
+      @include font($size: 1.6rem, $weight: 600);
+    }
+    &-description {
+      width: 313px;
+      @include font($size: 1.6rem, $weight: 400);
+      color: rgb(129, 139, 156);
+    }
+  }
+}

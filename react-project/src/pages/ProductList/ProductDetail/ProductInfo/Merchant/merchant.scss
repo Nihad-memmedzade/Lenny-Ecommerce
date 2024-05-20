@@ -1,0 +1,140 @@
+@import "..//..//..//../../assets/scss/maps.scss";
+@import "..//..//..//../../assets/scss/mixins.scss";
+@import "..//..//..//../../assets/scss/veriable.scss";
+
+.merchant {
+  .merchant-title {
+    @include font($size: 2rem, $weight: 600);
+    margin-bottom: 2.4rem;
+  }
+  .merchant-container {
+    @include flex($justify: space-between, $align: center);
+    .merchant-left-conteiner {
+      @include flex($gap: 1.6rem);
+      .merchant-left-cnt1 {
+        @include flex();
+        .merchant-logo {
+          @include cnt(8.4rem, 8.4rem);
+          position: relative;
+          .merchant-logo-img {
+            @include position(absolute, -5.2rem, -6.3rem);
+            @include cnt(unset, unset);
+          }
+        }
+      }
+      .merchant-left-cnt2 {
+        @include flex(column, $gap: 8px);
+        .merchant-left-cnt2-p1 {
+          @include font($size: 1.8rem, $weight: 600);
+        }
+        .merchant-left-cnt2-p2 {
+          @include font($size: 1.6rem, $weight: 400);
+          color: rgb(129, 139, 156);
+        }
+        .merchant-buttons {
+          @include flex($gap: 0.8rem);
+          .merchant-btn1 {
+            @include cnt(14.2rem, 3.2rem, 0.4rem);
+            background-color: rgba(29, 158, 52, 0.1);
+            @include font($size: 1.4rem, $weight: 500);
+            color: rgb(29, 158, 52);
+          }
+        }
+      }
+    }
+    .merchant-right-conteiner {
+      @include flex($gap: 1.6rem);
+      .merchant-right-btn1 {
+        background-color: #fff;
+        @include flex($justify: center, $align: center, $gap: 0.3rem);
+        @include cnt(12rem, 5.3rem, 0.8rem, 1px solid rgb(30, 76, 47));
+        img {
+          @include cnt(2rem, 2rem);
+        }
+        @include font($size: 1.8rem, $weight: 600);
+        color: rgb(30, 76, 47);
+      }
+      .merchant-right-btn2 {
+        @include cnt(20rem, 5.3rem);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .merchant {
+    .merchant-container {
+      .merchant-left-conteiner {
+        .merchant-left-cnt2 {
+          @include flex(column, $gap: 8px);
+          .merchant-left-cnt2-p1 {
+            @include font($size: 1.6rem, $weight: 600);
+          }
+          .merchant-left-cnt2-p2 {
+            @include font($size: 1.4rem, $weight: 400);
+          }
+        }
+      }
+      .merchant-right-conteiner {
+        .merchant-right-btn1 {
+          @include cnt(11.5rem, 5rem, 0.8rem, 1px solid rgb(30, 76, 47));
+
+          @include font($size: 1.6rem, $weight: 600);
+        }
+        .merchant-right-btn2 {
+          @include cnt(19.7rem, 5rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .merchant {
+    .merchant-title {
+      @include font($size: 1.6rem, $weight: 600);
+      margin-bottom: 1.6rem;
+    }
+    .merchant-container {
+      @include flex(column, $justify: unset, $align: center, $gap: 2.4rem);
+      .merchant-left-conteiner {
+        .merchant-left-cnt1 {
+          .merchant-logo {
+            @include cnt(5.2rem, 5.2rem);
+            .merchant-logo-img {
+              @include position(absolute, -3rem, -5.5rem);
+              @include cnt(16.4rem, 12.5rem);
+            }
+          }
+        }
+        .merchant-left-cnt2 {
+          @include flex(column, $gap: 2px);
+          .merchant-left-cnt2-p1 {
+            @include font($size: 1.4rem, $weight: 600);
+          }
+          .merchant-left-cnt2-p2 {
+            @include font($size: 1.2rem, $weight: 400);
+          }
+          .merchant-buttons {
+            .merchant-btn1 {
+              @include cnt(12.4rem, 2.9rem, 0.4rem);
+
+              @include font($size: 1.2rem, $weight: 500);
+            }
+          }
+        }
+      }
+      .merchant-right-conteiner {
+        .merchant-right-btn1 {
+          @include flex($gap: 1rem);
+          @include cnt(15.5rem, 4.8rem);
+
+          @include font($size: 1.4rem, $weight: 600);
+        }
+        .merchant-right-btn2 {
+          @include cnt(15.5rem, 4.8rem);
+        }
+      }
+    }
+  }
+}

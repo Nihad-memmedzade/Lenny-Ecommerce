@@ -1,0 +1,71 @@
+@import "../../../assets/scss/maps.scss";
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/veriable.scss";
+
+.category {
+  @include flex(column);
+  @include margin(84px, $left: 120px, $right: 120px,$bottom: 122px);
+  .category-title {
+    @include flex($align: center, $justify: space-between);
+
+    .category-pr {
+      @include font($size: 38px, $weight: 600);
+      @include margin($top: 0px, $bottom: 0px);
+      text-align: left;
+    }
+    .category-btn {
+      @include cnt(122px, 45px, $border: 1px solid rgb(30, 76, 47));
+      background-color: #fff;
+      color: rgb(30, 76, 47);
+    }
+  }
+  .category-container {
+    @include flex($justify:space-between);
+    margin-top: 52px;
+  }
+ 
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .category {
+    @include margin(61px, $left: 80px, $right: 80px);
+    .category-title {
+      .category-pr {
+        @include font($size: 28px);
+      }
+      .category-btn {
+        @include cnt(112px, 42px);
+      }
+    }
+    .category-container {
+      margin-top: 33px;
+    }
+    .category-line {
+      @include margin($top: 32px, $bottom: 60px);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .category {
+    @include margin(60px, $left: 24px, $right: 24px,$bottom:-6rem);
+    .category-title {
+      .category-pr {
+        @include font($size: 18px);
+      }
+      .category-btn {
+        @include cnt(94px, 32px);
+      }
+    }
+    .category-container {
+      @include margin($top: 33px, $bottom: 100px);
+
+      overflow-x: scroll;
+      @include flex($justify: none, $gap: 16px);
+    }
+    .category-line {
+      display: none;
+      @include margin($top: 32px, $bottom: 60px);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "..//../assets/scss/maps.scss";
+@import "..//../assets/scss/mixins.scss";
+@import "..//../assets/scss/veriable.scss";
+.btn{
+    @include cnt(200px,53px,8px,none);
+    background-color: rgb(30, 76, 47);
+    color: #fff;
+}

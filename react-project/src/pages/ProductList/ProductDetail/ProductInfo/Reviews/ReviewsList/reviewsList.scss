@@ -1,0 +1,80 @@
+@import "..//..//..//..//..//../assets/scss/maps.scss";
+@import "..//..//..//..//..//../assets/scss/mixins.scss";
+@import "..//..//..//..//..//../assets/scss/veriable.scss";
+
+.reviewsList {
+  width: 100%;
+  margin-top: 3.2rem;
+  &-title {
+    @include font($size: 2rem, $weight: 600);
+    margin-bottom: 1.6rem;
+  }
+  &-buttons {
+    @include flex($gap: 1.2rem);
+    .reviewsList-btn1 {
+      @include cnt(10.2rem, 4.4rem, 0.8rem, 1px solid rgb(29, 158, 52));
+      @include font($size: 1.4rem, $weight: 500);
+      color: rgb(29, 158, 52);
+      background-color: unset;
+    }
+    .reviewsList-btn2 {
+      @include cnt(15.2rem, 4.4rem, 0.8rem, 1px solid rgb(228, 233, 238));
+      @include font($size: 1.4rem, $weight: 500);
+      background-color: unset;
+      color: #000;
+    }
+    .reviewsList-btn2 {
+      @include cnt(13.7rem, 4.4rem, 0.8rem, 1px solid rgb(228, 233, 238));
+    }
+  }
+
+  .reviewsComment-container {
+    .reviewsComment-container-line {
+      @include cnt(100%, 1px);
+      background: rgb(228, 233, 238);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,xl)) {
+  .reviewsList {
+    &-buttons {
+      .reviewsList-btn1 {
+        @include cnt($height: 3.8rem);
+      }
+      .reviewsList-btn2 {
+        @include cnt($height: 3.8rem);
+      }
+      .reviewsList-btn2 {
+        @include cnt($height: 3.8rem);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints,sm)) {
+  .reviewsList {
+    margin-top: 2.4rem;
+    &-title {
+      @include font($size: 1.6rem, $weight: 600);
+    }
+    &-buttons {
+      @include flex($gap: 0.8rem);
+      .reviewsList-btn1 {
+        @include cnt(8.2rem, 3.2rem);
+        @include font($size: 1.2rem, $weight: 500);
+      }
+      .reviewsList-btn2 {
+        @include cnt(12.3rem, 3.2rem);
+        @include font($size: 1.2rem, $weight: 500);
+      }
+    }
+
+    .reviewsComment-container {
+      .reviewsComment-container-line {
+        @include cnt(100%, 1px);
+        background: rgb(228, 233, 238);
+      }
+    }
+  }
+}
