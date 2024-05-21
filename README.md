@@ -19,11 +19,9 @@ This application utilizes the following main dependencies:
 - **react:** The core React library for building user interfaces.
 - **react-dom:** A package for interacting with the DOM in React applications.
 - **react-router-dom:** Adds routing capabilities to a React application.
-- **react-hook-form:** A library for managing form state in React, simplifying form handling.
 - **react-icons:** A library containing various reusable icons for React projects.
 - **redux-toolkit:** A library providing helper tools for Redux, making Redux usage more straightforward.
 - **axios:** A library for making HTTP requests, commonly used for interacting with APIs.
-- **react-spinners:** A library providing customizable loading animations for React projects.
 - **react-toastify:** A library for creating notification messages, informing users about various states.
 - **reactstrap:** A library containing Bootstrap components for React applications.
 - **redux-persist:** A library for storing and restoring Redux state, preserving state across page reloads.
@@ -46,3 +44,6 @@ npm run dev
 
 > Login: nihad.mmmdzad@bk.ru <br>
 > Password: Nihad17272829
+
+### Page 1
+![page-1](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/5597dddf-46fb-47e4-abb8-c1a7138b0dcd)
