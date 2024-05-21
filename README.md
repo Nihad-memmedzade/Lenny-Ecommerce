@@ -60,6 +60,4 @@ npm run dev
 
 ---
 ### Page 4
-
-![Uploading detail-page.PNG…]()
-
+![detail-page](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/bf3d76f0-467a-4798-bca0-19bf7377980b)
