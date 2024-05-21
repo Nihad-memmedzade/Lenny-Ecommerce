@@ -45,5 +45,21 @@ npm run dev
 > Login: nihad.mmmdzad@bk.ru <br>
 > Password: Nihad17272829
 
+------
 ### Page 1
-![page-1](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/5597dddf-46fb-47e4-abb8-c1a7138b0dcd)
+![home-page](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/763aed10-6826-457e-9d5d-3f492619959e)
+![home-page(2)](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/7db92a1d-f754-4eaf-9b44-219a1fad2337)
+
+---
+### Page 2
+![shoppingChart-page](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/4f0ef0de-4a14-4711-9db1-934ed8bf033b)
+
+---
+### Page 3
+![filter-page](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/cef0e38e-006f-4ef8-8a99-c6b9305e3895)
+
+---
+### Page 4
+![detail-page](https://github.com/Nihad-memmedzade/Lenny-Ecommerce/assets/145061906/77f6dd0b-e34f-4d10-8da7-e943e111e11c)
+
+
